@@ -1,0 +1,179 @@
+// 100: Thin;
+// 200: Extra Light (Ultra Light);
+// 300: Light;
+// 400: Normal;
+// 500: Medium;
+// 600: Semi Bold (Demi Bold);
+// 700: Bold;
+// 800: Extra Bold (Ultra Bold);
+// 900: Black (Heavy).
+
+
+
+// 300: Light;
+
+
+// 400
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'), url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+%font-family-400 {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'AlexBrush';
+    src: url('../fonts/AlexBrush-Regular.woff2') format('woff2'), url('../fonts/AlexBrush-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+%second-family-400 {
+    font-family: 'AlexBrush', sans-serif;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font3-400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+// 500: Medium;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2'), url('../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font-family-500 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%tfont4-500 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Cormorantf') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%third-family-500 {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 500;
+}
+
+
+// 600: SemiBold (Demi Bold);
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2'), url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font-family-600 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-SemiBold.woff2') format('woff2'), url('../fonts/Cormorant-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%third-family-600 {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 600;
+}
+
+
+
+// 700: Bold;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2'), url('../fonts/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font-family-700 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-Bold.woff2') format('woff2'), url('../fonts/Cormorant-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%third-family-700 {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 700;
+}
+
+// 800: ExtraBold (Ultra Bold);
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-ExtraBold.woff2') format('woff2'), url('../fonts/Inter-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+%font-family-800 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+// 900: Black (Heavy).
+
+// // @extend %yne-700;

@@ -1,0 +1,208 @@
+@use 'sass:math';
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+// REM
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+    // font-size: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+body {
+    background-color: var(--page-bg);
+    min-width: 100vw;
+    color: var(--text-color);
+    // font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    // font-size: clamp(0.75rem, 0.556rem + 0.86vw, 1.25rem);
+    // line-height: 1.4;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+::marker {
+    margin-top: 10px;
+}
+
+// .wrapper
+// {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100%;
+// }
+
+.main {
+    overflow-x: clip;
+    //     flex: 1 0 auto;
+}
+
+// .footer
+// {
+//     flex: 0 0 auto;
+// }
+
+// .hr-line
+// {
+//     border-bottom: 1px solid var(--black);
+// }
+
+// .images-bg
+// {
+
+// background: url(../images/footer@1x.png);
+// padding-top: 900px;
+// background-size: cover;
+// background-position: center;
+// background-repeat: no-repeat;
+// @media screen and (min-device-pixel-ratio: 2),
+// screen and (-webkit-min-device-pixel-ratio: 2),
+// screen and (-o-mini-device-pixel-ratio: 2/1),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx)
+// {
+//   background: url(../images/footer@2x.png);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
+.visually-hidden {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(#000, .3);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    @include transition ($transition-property: opacity);
+
+    &--active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.dis-scroll {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overflow {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcbs {
+    justify-content: space-between;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+htlm {
+    scroll-behavior: smooth;
+}

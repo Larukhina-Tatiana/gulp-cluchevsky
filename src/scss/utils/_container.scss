@@ -1,0 +1,39 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px solid brown;
+  background-color: green;
+  max-width: 1630px;
+  // max-width: calc(1290px + 30px);
+}
+
+.reach__container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1280px;
+  // max-width: calc(1290px + 30px);
+}
+
+
+
+.container-right {
+  /* overflow-x: hidden; */
+  padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+  @media (max-width: var(--laptop-size)) {
+    padding-left: var(--container-padding);
+  }
+}
+
+.container-left {
+  /* overflow-x: hidden; */
+  padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+  @media (max-width: var(--laptop-size)) {
+    padding-right: var(--container-padding);
+  }
+}

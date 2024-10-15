@@ -1,0 +1,13 @@
+// Прижатие футера к низу
+html,
+body {
+  height: 100%;
+}
+.wrepper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}

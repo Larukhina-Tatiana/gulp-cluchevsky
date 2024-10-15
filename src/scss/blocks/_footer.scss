@@ -1,0 +1,9 @@
+.footer {
+  background-color: yellowgreen;
+  display: flex;
+
+  @media screen and (width <=1199px) {
+    background-color: olive;
+
+  }
+}

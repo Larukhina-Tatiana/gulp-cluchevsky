@@ -1,0 +1,88 @@
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Alex Brush", sans-serif;
+    --third-family: "Cormorant", sans-serif;
+    --font3: "Roboto", sans-serif;
+    --font4: "Poppins", sans-serif;
+    --font5: "Source Sans Pro", sans-serif;
+
+
+    --solid: #7a0000;
+    --bg: rgba(164, 164, 164, 0.15);
+    --accent-color: #7a0000;
+
+
+    --box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03),
+        0 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+    --border-radius: 30px;
+
+    --hero-slider-speed: 1500;
+
+    --burger-width: 40px;
+    --burger-height: 20px;
+    --burger-line-height: 2px;
+
+    --swiper-theme-color: var(--accent-color);
+    --indent: max(15px, calc((100% - 1600px) /2));
+
+    --text-color: #252526;
+    --page-bg: #fff;
+
+
+    --container-width: 1200px;
+    --container-padding: 15px;
+
+    --laptop-size: 1199px;
+    --tablet-size: 959px;
+    --mobile-size: 599px;
+}
+
+$accent: #7a0000;
+$solid: #7a0000;
+$sangria: #9D0000;
+$see-all: #970000;
+$bg: rgba(164, 164, 164, 0.15);
+$main-color: #121212;
+$white: #FFF;
+$wild-sand: #f4f4f4;
+$black: #000;
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
+
+
+
+@mixin transition ($transition-property: color, $transition-duration: 450ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+
+
+// <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
+// <use href="./images/projects/icons.svg#icon-search"></use>
+// </svg>
+
+//  Линия под заголовками
+//  padding-bottom: 23px;
+// margin-bottom: 23px;
+// position: relative;
+
+// &::after {
+//   position: absolute;
+//   content: '';
+//   width: 200px;
+//   height: 1px;
+//   left: calc(50% - 100px);
+//   bottom: 0;
+//   background-color: #6D7278;
+//   border: 1px solid var(--line);
+//   border-radius: 0.5px;
+// }
+// }
+
+//       box-shadow: -3px -3px 49px rgb(10 1 1 / 4%), 3px 10px 36px rgb(0 0 0 / 10%);
